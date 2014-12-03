@@ -19,9 +19,6 @@ class ExpressionEvaluator
     create_custom_method( name.to_sym ) { instance_variable_get( "@" + name.to_s ) }
   end
 
-
-
-
   # Evaluate the expression
   def evaluate
     eval(@expression)
